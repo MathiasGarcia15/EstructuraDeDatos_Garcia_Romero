@@ -7,13 +7,13 @@ class CLinkedList
 private:
     struct NODE
     {
-        T m_data;             
-        struct NODE* m_pNext; 
+        T m_data;
+        struct NODE* m_pNext;
 
         NODE(T data, NODE* next = nullptr) : m_data(data), m_pNext(next) {}
     };
 
-    NODE* m_pRoot; 
+    NODE* m_pRoot;
 
 public:
     CLinkedList() : m_pRoot(nullptr) {}
